@@ -1,3 +1,4 @@
+using MarketApi.Infastructure;
 using MarketPalceManagement.Account;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddApplicationServices(configuration);
 builder.Services.AddAccountServices(configuration);
 
 var app = builder.Build();

@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketApi", "MarketApi\MarketApi.csproj", "{5DF75F00-070D-4229-BB23-8506BFB3410E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketApi", "MarketApi\MarketApi.csproj", "{5DF75F00-070D-4229-BB23-8506BFB3410E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketPalceManagement.Account", "MarketPalceManagement.Account\MarketPalceManagement.Account.csproj", "{DBCD2C99-C4C9-4A9E-AB8E-1E9E817EBFDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketPalceManagement.Account", "MarketPalceManagement.Account\MarketPalceManagement.Account.csproj", "{DBCD2C99-C4C9-4A9E-AB8E-1E9E817EBFDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceManagement.Persistence", "MarketplaceManagement.Persistence\MarketplaceManagement.Persistence.csproj", "{EDD48ABB-BF6D-49F0-B196-6A2EB2EA706A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketplaceManagement.Domain", "MarketplaceManagement.Domain\MarketplaceManagement.Domain.csproj", "{14271724-73D7-45C7-BB37-0AAA967062CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +25,14 @@ Global
 		{DBCD2C99-C4C9-4A9E-AB8E-1E9E817EBFDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBCD2C99-C4C9-4A9E-AB8E-1E9E817EBFDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBCD2C99-C4C9-4A9E-AB8E-1E9E817EBFDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD48ABB-BF6D-49F0-B196-6A2EB2EA706A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD48ABB-BF6D-49F0-B196-6A2EB2EA706A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD48ABB-BF6D-49F0-B196-6A2EB2EA706A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD48ABB-BF6D-49F0-B196-6A2EB2EA706A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14271724-73D7-45C7-BB37-0AAA967062CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14271724-73D7-45C7-BB37-0AAA967062CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14271724-73D7-45C7-BB37-0AAA967062CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14271724-73D7-45C7-BB37-0AAA967062CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

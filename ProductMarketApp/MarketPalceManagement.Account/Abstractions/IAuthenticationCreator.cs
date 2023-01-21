@@ -2,5 +2,5 @@
 
 public interface IAuthenticationCreator
 {
-    Task<string> CreateToken(string userName);
+    string CreateToken(string userName);
 }

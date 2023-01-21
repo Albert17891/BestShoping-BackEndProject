@@ -1,5 +1,6 @@
 ﻿using MarketPalceManagement.Account.Abstractions;
 using MarketPalceManagement.Account.Models;
+using MarketplaceManagement.Domain.Account;
 using Microsoft.AspNetCore.Identity;
 
 namespace MarketPalceManagement.Account.Services;

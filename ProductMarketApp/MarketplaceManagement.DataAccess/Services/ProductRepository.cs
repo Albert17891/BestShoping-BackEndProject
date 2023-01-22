@@ -13,8 +13,13 @@ public class ProductRepository : BaseRepository<Product>, IProductRepository
 		_context = context;
 	}
 
-	public async Task AddAsync(Product product)
+	public async Task AddProductAsync(Product product)
 	{
-		await AddAsync(product);
+		await AddAsync(product);	
+	}
+
+	public void UpdateProduct(Product product)
+	{
+		throw new NotImplementedException();
 	}
 }

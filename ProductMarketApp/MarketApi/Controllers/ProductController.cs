@@ -25,8 +25,8 @@ public class ProductController : ControllerBase
             return BadRequest();
         }
 
-        await _productService.AddProductAsync(productRequest.Adapt<ProductServcieModel>(), cancellationToken);
+        var result = await _productService.AddProductAsync(productRequest.Adapt<ProductServcieModel>(), cancellationToken);
 
-        return Ok();
+        return Ok(result);
     }
 }

@@ -6,6 +6,6 @@ public interface IProductRepository
 {
     IQueryable<Product> Table { get; }
 
-    Task AddAsync(Product product);
-    void Update(Product product);
+    Task AddProductAsync(Product product);
+    void UpdateProduct(Product product);
 }

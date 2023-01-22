@@ -4,5 +4,5 @@ namespace MarketplaceManagement.ProductService.Abstractions;
 
 public interface IProductService
 {
-    Task AddProductAsync(ProductServcieModel productServcieModel,CancellationToken cancellationToken);
+    Task<int> AddProductAsync(ProductServcieModel productServcieModel,CancellationToken cancellationToken);
 }

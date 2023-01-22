@@ -1,4 +1,5 @@
-﻿using MarketPalceManagement.Account.Abstractions;
+﻿using Mapster;
+using MarketPalceManagement.Account.Abstractions;
 using MarketPalceManagement.Account.Models;
 using MarketplaceManagement.Domain.Account;
 using Microsoft.AspNetCore.Identity;
@@ -34,5 +35,19 @@ public class UserAuthentication : IUserAuthentication
         }
 
         return token;
+    }
+
+    public async Task<string> RegisterAsync(RegisterServiceModel registerServiceModel)
+    {
+        var user = registerServiceModel.Adapt<AppUser>();
+
+      var result=  await _userManager.CreateAsync(user, registerServiceModel.Password);
+
+        if (!result.Succeeded)
+        {
+            throw new Exception("Failed to Register");
+        }
+
+        return user.Id;
     }
 }

@@ -1,5 +1,6 @@
 using MarketApi.Infastructure;
 using MarketPalceManagement.Account;
+using MarketplaceManagement.ProductService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddApplicationServices(configuration);
 builder.Services.AddAccountServices(configuration);
+builder.Services.AddProductServices();
 
 builder.Services.AddCors(options =>
 {

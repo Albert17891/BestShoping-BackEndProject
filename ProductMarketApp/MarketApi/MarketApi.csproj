@@ -18,8 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MarketPalceManagement.Account\MarketPalceManagement.Account.csproj" />
+    <ProjectReference Include="..\MarketPalceManagement.Account\MarketplaceManagement.Account.csproj" />
     <ProjectReference Include="..\MarketplaceManagement.Persistence\MarketplaceManagement.Persistence.csproj" />
+    <ProjectReference Include="..\MarketplaceManagement.ProductService\MarketplaceManagement.ProductService.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,6 +3,7 @@ using MarketApi.Model.Request.Account;
 using MarketPalceManagement.Account.Abstractions;
 using MarketPalceManagement.Account.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
 
 namespace MarketApi.Controllers;
 [Route("[controller]")]
@@ -29,6 +30,18 @@ public class AccountController : ControllerBase
         if (token is null)
             return Unauthorized();
 
-        return Ok(token);
+        return Ok(JsonSerializer.Serialize(token));
+    }
+
+    [Route("register")]
+    [HttpPost]
+    public async Task<IActionResult> Register(RegisterRequest registerRequest)
+    {
+        if (registerRequest is null)
+            return BadRequest();
+
+        var result = await _userAuthentication.RegisterAsync(registerRequest.Adapt<RegisterServiceModel>());
+
+        return Ok(result);
     }
 }

@@ -1,5 +1,6 @@
 using MarketApi.Infastructure;
 using MarketPalceManagement.Account;
+using MarketplaceManagement.Persistence;
 using MarketplaceManagement.ProductService;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -45,5 +46,7 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+await Seeding.SeedUserAsync(app.Services);
 
 app.Run();

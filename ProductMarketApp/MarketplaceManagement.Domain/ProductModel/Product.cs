@@ -12,5 +12,7 @@ public class Product
     public int Quantity { get; set; }
 
     public double Price { get; set; }
+
+    public int Counter { get; set; }
     public List<UserProduct> UsersProducts { get; set; }
 }
